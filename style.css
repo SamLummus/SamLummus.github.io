@@ -11,6 +11,16 @@ body{
 h1 {
     padding-top: 70px;
 }
+.uxPics{
+  max-width: 400px;
+  margin: auto;
+}
+.carousel-control-next{
+  background-color: #111;
+}
+.carousel-control-prev{
+  background-color: #111;
+}
 ul {
     list-style-type: none;
     margin: 0;
