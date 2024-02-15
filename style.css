@@ -4,12 +4,36 @@ body{
   font-size: 24px;
   font-weight: bold;
   color: #11181C;
+  padding-top: 70px;
 }
 .container {
   background-color: #339377;
 }
+.skill {
+  max-width: 100%;
+}
+#hyperlink {
+  background-color:#333;
+}
 h1 {
-    padding-top: 70px;
+    font-size: 66px;
+}
+h2 {
+  font-size: 46px;
+}
+#bioPic {
+  max-width: 100%;
+  margin: auto;
+}
+#comicPic {
+  max-width: 100%;
+}
+video {
+  max-width: 100%;
+  overflow: hidden;
+}
+#skills {
+  font-size: 36px;
 }
 .uxPics{
   max-width: 400px;
@@ -32,11 +56,12 @@ ul {
     top: 0;
     z-index: 1000;
   }
-
   li {
     float: left;
   }
-
+  #return {
+    float: right;
+  }
   li a {
     display: block;
     color: white;
