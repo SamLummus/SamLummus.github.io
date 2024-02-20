@@ -4,7 +4,6 @@ body{
   font-size: 24px;
   font-weight: bold;
   color: #11181C;
-  padding-top: 70px;
 }
 @media only screen and (min-width: 768px) {
 
@@ -59,13 +58,15 @@ body{
 }
 .container {
   background-color: #339377;
-}
-.skill {
+  padding-top: 30px;
+  padding-bottom: 80px;
   max-width: 100%;
 }
 .skillIcons {
-  width: 75%;
-  height: auto;
+  max-width: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
 }
 #hyperlink {
   background-color:#333;
@@ -76,19 +77,29 @@ h1 {
 h2 {
   font-size: 46px;
 }
+a {
+  overflow: hidden;
+}
 #bioPic {
-  max-width: 100%;
+  max-width: 70%;
   margin: auto;
+  display: flex;
+  align-items: center;
 }
 #comicPic {
   max-width: 100%;
 }
 video {
   max-width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
+  align-items: center;
 }
 #skills {
   font-size: 36px;
+}
+#text {
+  height: 100%;
+  width: 100%;
 }
 .uxPics{
   max-width: 400px;
@@ -130,5 +141,12 @@ ul {
   }
   .content {
     margin-top: 40px;
-    padding: 20px;
+    /* padding: 20px; */
   }
+
+section {
+  padding-top: 180px;
+  padding-bottom: 100px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
