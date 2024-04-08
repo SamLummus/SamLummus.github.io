@@ -5,6 +5,11 @@ body{
   font-weight: bold;
   color: #11181C;
 }
+a {
+  text-decoration:none;
+  font-size: 36px;
+  color: rgb(25, 26, 27);
+}
 @media only screen and (min-width: 768px) {
 
   /* For desktop: */
@@ -68,8 +73,13 @@ body{
   display: flex;
   align-items: center;
 }
-#hyperlink {
-  background-color:#333;
+.button {
+  background-color: #d8e3e0;
+  border-radius: 4px;
+  display: inline-block;
+  padding-top: 4px;
+  text-align: center;
+  border: 5px;
 }
 h1 {
     font-size: 66px;
