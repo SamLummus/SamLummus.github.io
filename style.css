@@ -10,6 +10,9 @@ a {
   font-size: 36px;
   color: rgb(25, 26, 27);
 }
+.navbar {
+  position: fixed;
+}
 @media only screen and (min-width: 768px) {
 
   /* For desktop: */
