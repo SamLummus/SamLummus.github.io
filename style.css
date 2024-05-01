@@ -94,10 +94,11 @@ a {
   overflow: hidden;
 }
 #bioPic {
-  max-width: 70%;
-  margin: auto;
+  max-height: 50%;
+  max-width: 50%;
+  margin: 0 auto;
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 #comicPic {
   max-width: 100%;
