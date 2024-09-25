@@ -10,12 +10,12 @@ a {
   font-size: 36px;
   color: rgb(25, 26, 27);
 }
-.navbar {
-  position: fixed;
-}
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
 
-  /* For desktop: */
+  li a {
+    font-size: .9rem;
+  }
+  /* For desktop:
   .col-1 {
       width: 8.33%;
   }
@@ -62,12 +62,12 @@ a {
 
   .col-12 {
       width: 100%;
-  }
+  } */
 }
 .container {
   background-color: #339377;
   padding-top: 30px;
-  padding-bottom: 80px;
+  padding-bottom: 50px;
   max-width: 100%;
 }
 .skillIcons {
@@ -94,8 +94,8 @@ a {
   overflow: hidden;
 }
 #bioPic {
-  max-height: 50%;
-  max-width: 50%;
+  /* max-height: 50%;
+  max-width: 50%; */
   margin: 0 auto;
   display: flex;
   justify-content: center;
