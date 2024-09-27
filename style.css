@@ -71,7 +71,7 @@ a {
   max-width: 100%;
 }
 .skillIcons {
-  max-width: 50%;
+  max-width: 40%;
   margin: auto;
   display: flex;
   align-items: center;
@@ -94,11 +94,18 @@ a {
   overflow: hidden;
 }
 #bioPic {
-  /* max-height: 50%;
-  max-width: 50%; */
+  max-height: 100%;
+  max-width: 50%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  box-shadow: 5px 5px black;
+}
+#skillrow{
+  /* padding-top: 10px;
+  padding-bottom: 10px; */
+  padding: 10px;
+  background-color: #2f7d67;
 }
 #comicPic {
   max-width: 100%;
