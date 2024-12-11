@@ -122,8 +122,9 @@ video {
   height: 100%;
   width: 100%;
 }
-.uxPics{
-  max-width: 400px;
+.vrPics{
+  width: 100%;
+  height: 500px;
   margin: auto;
 }
 .carousel-control-next{
