@@ -122,17 +122,10 @@ video {
   height: 100%;
   width: 100%;
 }
-.vrPics{
-  width: 100%;
-  height: auto;
-  max-height: 450px;
-  margin: auto;
-}
-.carousel-control-next{
-  background-color: #111;
-}
-.carousel-control-prev{
-  background-color: #111;
+.video-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 ul {
     list-style-type: none;
