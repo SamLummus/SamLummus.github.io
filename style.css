@@ -1,20 +1,23 @@
-body{
+body {
   background-color: #7f9db1;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 24px;
   font-weight: bold;
   color: #11181C;
 }
+
 a {
-  text-decoration:none;
+  text-decoration: none;
   font-size: 36px;
   color: white;
 }
+
 @media only screen and (max-width: 768px) {
 
   li a {
     font-size: .9rem;
   }
+
   /* For desktop:
   .col-1 {
       width: 8.33%;
@@ -64,18 +67,18 @@ a {
       width: 100%;
   } */
 }
+
 .container {
   background-color: #a0d0e9;
   padding-top: 30px;
   padding-bottom: 50px;
   max-width: 100%;
 }
-.skillIcons {
-  max-width: 40%;
-  margin: auto;
-  display: flex;
-  align-items: center;
+
+.skill-text {
+  font-size: 36px;
 }
+
 .button {
   background-color: #0d3b66;
   border-radius: 4px;
@@ -84,15 +87,19 @@ a {
   text-align: center;
   border: 5px;
 }
+
 h1 {
-    font-size: 66px;
+  font-size: 5rem;
 }
+
 h2 {
-  font-size: 46px;
+  font-size: 3rem;
 }
+
 a {
   overflow: hidden;
 }
+
 #bioPic {
   max-height: 100%;
   max-width: 50%;
@@ -101,75 +108,199 @@ a {
   justify-content: center;
   box-shadow: 5px 5px black;
 }
-#skillrow{
+
+#skillrow {
   /* padding-top: 10px;
   padding-bottom: 10px; */
   padding: 10px;
   background-color: #092e66;
 }
+
 #comicPic {
   max-width: 100%;
 }
+
 video {
   max-width: 100%;
   /* overflow: hidden; */
   align-items: center;
 }
+
 #skills {
   font-size: 36px;
 }
-#text {
-  height: 100%;
-  width: 100%;
+
+#skillsUsed {
+  margin-top: 2rem;
 }
-.video-container {
+
+/* Skill icons */
+.skills-icons {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 9rem;
   justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px 0;
 }
-ul { 
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #0d3b66;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    /* This is for the top banner */
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1rem;
+  text-align: center;
+  color: #111;
+}
+
+.skill img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 5px;
+  object-fit: contain;
+}
+
+/* Make everything stack & resize nicely on mobile */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 3rem;
   }
-  li {
-    float: left;
+  h2{
+    font-size: 1.5rem;
   }
-  #return {
-    float: right;
-  }
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  .row {
+    flex-direction: column;
   }
 
-  li a:hover {
-    background-color: #111;
+  .col-md-6 {
+    width: 100%;
+    max-width: 100%;
   }
-  .content {
-    margin-top: 40px;
-    /* padding: 20px; */
+
+  .skills-icons {
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 10px;
   }
-  
-section {
-  padding-top: 140px;
-  padding-bottom: 100px;
-  padding-right: 40px;
-  padding-left: 40px;
+
+  .skill {
+    width: 60px;
+    font-size: 0.75em;
+  }
+
+  .skill img {
+    width: 70px;
+    height: 70px;
+  }
+
+  #VR {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #VR h2 {
+    font-size: 1.6em;
+    text-align: center;
+  }
+  #vrText {
+    font-size: 0.6em;
+    text-align: justify;
+  }
+  #kestrel {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #kestrelText{
+    font-size: 0.6em;
+    text-align: justify;
+  }
+  #FishandGame {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+    #fishandgameText {
+    font-size: 0.6em;
+    text-align: justify;
+  }
+
+  .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    margin-bottom: 20px;
+  }
+
+  .video-container iframe {
+    width: 100%;
+  max-width: 560px;
+  height: auto;
+  }
 }
-/* #bio{
-  padding-top: 180px;
-  padding-bottom: 100px;
-  padding-right: 40px;
-  padding-left: 40px;
-} */
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    margin-bottom: 20px;
+  }
+
+  .video-container iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0d3b66;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  /* This is for the top banner */
+}
+
+li {
+  float: left;
+}
+
+#return {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.content {
+  margin-top: 40px;
+  /* padding: 20px; */
+}
+section{
+  scroll-margin-top: 80px;
+}
+@media (max-width: 1024px) {
+  section {
+    padding: 40px 20px;
+    scroll-margin-top: 140px;
+  }
+}
